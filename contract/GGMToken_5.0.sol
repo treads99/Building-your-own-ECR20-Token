@@ -1,12 +1,12 @@
 pragma solidity ^0.5.00;
 
 // ----------------------------------------------------------------------------
-// 'GGMToken' token contract
+// Goku Inu
 //
-// Deployed to : 0xFEB02D9383C49A8373F88e82EbCecB553c1837bf
-// Symbol      : GGM
-// Name        : GGMToken
-// Total supply: 100000000
+// Deployed to : 0x62D2d9D9ba09E0713c66C0b2524A07790024C4e6
+// Symbol      : GOK
+// Name        : Goku Inu
+// Total supply: 1000000000000000
 // Decimals    : 18
 //
 // Enjoy.
@@ -99,7 +99,7 @@ contract Owned {
 // ERC20 Token, with the addition of symbol, name and decimals and assisted
 // token transfers
 // ----------------------------------------------------------------------------
-contract GGMToken is ERC20Interface, Owned, SafeMath {
+contract Goku Inu is ERC20Interface, Owned, SafeMath {
     string public symbol;
     string public  name;
     uint8 public decimals;
@@ -113,12 +113,12 @@ contract GGMToken is ERC20Interface, Owned, SafeMath {
     // Constructor
     // ------------------------------------------------------------------------
     constructor() public {
-        symbol = "GGM";
-        name = "GGMToken";
+        symbol = "GOK";
+        name = "Goku Inu";
         decimals = 18;
         _totalSupply = 100000000000000000000000000;
-        balances[0xFEB02D9383C49A8373F88e82EbCecB553c1837bf] = _totalSupply;
-        emit Transfer(address(0), 0xFEB02D9383C49A8373F88e82EbCecB553c1837bf, _totalSupply);
+        balances[0x62D2d9D9ba09E0713c66C0b2524A07790024C4e6] = _totalSupply;
+        emit Transfer(address(0), 0x62D2d9D9ba09E0713c66C0b2524A07790024C4e6, _totalSupply);
     }
 
 
